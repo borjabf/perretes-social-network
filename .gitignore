@@ -1,0 +1,20 @@
+# --- Entorno Virtual ---
+env/
+venv/
+.venv/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Django ---
+db.sqlite3
+
+# --- Archivos de sistema (Mac) ---
+.DS_Store
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
