@@ -20,5 +20,8 @@ from django.urls import path, include
 # Includes all the routes from the app in a decoupled way.
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Django built in auth pack
+    path('accounts/', include('django.contrib.auth.urls')),
+    # App routes
     path('', include('barks.urls')),
 ]

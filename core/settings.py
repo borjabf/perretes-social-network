@@ -117,3 +117,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static'] # Add path from static files (as .css)
+
+# Auth Redirects
+LOGIN_REDIRECT_URL = 'profile'
+LOGOUT_REDIRECT_URL = 'login'
