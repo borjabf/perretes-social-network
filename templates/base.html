@@ -1,0 +1,47 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>{%  block title %}Bark | More than just a bark{%  endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+<!-- Use header to improve semantic comprehension -->
+<header class="main-header">
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href=""><img src="{% static 'images/logo1.png' %}" alt="bark logo" class="logo-img"></a>
+        </div>
+        <!-- Menú items -->
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Register</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="social-links">
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+</div>
+
+        <p class="copyright">
+            &copy; 2026 Barks. More than just a bark.
+        </p>
+    </div>
+
+</footer>
+</body>
+</html>
