@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Django built in auth pack
     path('accounts/', include('django.contrib.auth.urls')),
-    # App routes
+    # App users routes (empty route for URL = "signup", "login")
+    path('', include('users.urls')),
+    # App barks routes
     path('', include('barks.urls')),
 ]
