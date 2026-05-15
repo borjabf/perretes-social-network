@@ -5,14 +5,32 @@
 {% block title %}Profile | Barks{% endblock %}
 <!-- Dynamic content block form base.html -->
 {% block content %}
-    <section class="container">
-    <div style="text-align: center; margin-top: 50px;">
-    <h1>¡Guau! 🐾</h1>
-    <p>Has entrado correctamente a tu perfil.</p>
-    <p>Hola, <strong>{{ user.username }}</strong>. Este es tu espacio privado.</p>
-
-    <a href="{% url 'logout' %}" style="color: var(--hover-color);">Cerrar sesión</a>
-</div>
+    <section class="profile-container">
+        <!-- Template variable to get the username -->
+        <h2>Welcome, {{ user.username }}</h2>
+        <!-- Bark textarea to send barks -->
+        <div class="bark-creator">
+            <form method="POST" class="bark-form"> <!-- Form to implement logic from view.profile -->
+            <!-- Token to check if form is sent by users from the site (not external) -->
+            {% csrf_token %}
+            <!-- Template variable from the view "profile" to create all form fields and validations -->
+            {{ form.as_p }}
+            <button type="submit" class="btn-submit">Bark!</button> <!-- To send the bark -->
+            </form>
+        </div>
+        <!-- Bark history feed from each user -->
+        <div class="barks-feed">
+            <h3>Your Barks</h3>
+            <!-- Template tag for loop to retrieve and show card for each bark in the DB -->
+            {% for bark in barks %}
+                <article class="bark-card">
+                    <p>{{ bark.content }}</p> <!-- Template variable to get the bark's content -->
+                    <small>Sent {{ bark.created_at|timesince}} ago</small> <!-- Template variable to get the bark's datetime (use of "timesince") -->
+                </article>
+            <!-- If user has no barks, shows a message -->
+            {%  empty %}
+                <p class="empty-bark-cards">You haven't barked yet!</p>
+            {%  endfor %}
+        </div>
     </section>
-
 {%  endblock %}

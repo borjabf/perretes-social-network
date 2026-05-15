@@ -5,9 +5,13 @@ from  django.contrib.auth.models import User
 # Create "barks" table model
 class Bark(models.Model):
     # id column is created by default
-    user = models.ForeignKey(User, on_delete=models.CASCADE) # Called "user" because Django rename it as user_id after
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='barks') # Called "user" because Django rename it as user_id after
     content = models.CharField(max_length=140) # CharField to add 140 limit constrain
     created_at = models.DateTimeField(auto_now_add=True) # To set the first time bark creation only
+
+    # Meta class to order barks by created_at descending (new first)
+    class Meta:
+        ordering = ['-created_at']
 
     # method to show the content on the admin panel.
     # It takes the username from user and limit the content to 20 chars

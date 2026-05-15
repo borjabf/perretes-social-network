@@ -77,6 +77,26 @@ body {
     border-radius: 10px;
 }
 
+/* Logout styling */
+.btn-logout {
+    background: none;
+    border: none;
+    color: var(--nav-text);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+/* Logout hover styling */
+.logout-button:hover {
+    background-color: var(--hover-color);
+    border-radius: 10px;
+}
+
 /* Main */
 main {
     flex: 1;
@@ -146,7 +166,6 @@ main {
     font-size: 0.9rem;
 }
 
-
 /* Form ul */
 .auth-form ul {
     margin-top: -10px;
@@ -187,6 +206,7 @@ main {
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
     width: 100%;
     margin-top: 1rem;
 }
@@ -199,6 +219,99 @@ main {
 /* Redirection text bottom form */
 .option-redir {
     margin: 1.2rem;
+}
+
+/* ========================= */
+/* Profile page */
+/* ========================= */
+
+/* Main profile container */
+.profile-container {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+/* Profile h2 */
+.profile-container h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Bark creator container */
+.bark-creator {
+    background: #fff;
+    border: 1px solid #eff3f4;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Bark textarea input */
+.bark-input {
+        font-family: Arial, sans-serif;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #eff3f4;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 10px 0;
+    resize: none;
+    transition: border-color 0.3s ease;
+    background: transparent;
+}
+
+/* Bark textarea focus */
+.bark-input:focus {
+    outline: none;
+    border-bottom-color: var(--hover-color); /* La línea se ilumina al escribir */
+}
+
+/* Bark textarea placeholder */
+.bark-input::placeholder {
+    color: #536471;
+}
+
+/* Bark's feed h2 */
+.barks-feed h3 {
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #eff3f4;
+    padding-bottom: 0.5rem;
+}
+
+/* Card of each bark */
+.bark-card {
+    border-bottom: 1px solid var(--nav-color);
+    padding: 1.2rem 0.5rem;
+    transition: background 0.2s, border-radius 0.2s;
+}
+
+/* Bark card when hover */
+.bark-card:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+}
+
+/* Bark card text */
+.bark-card p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #0f1419;
+    margin-bottom: 0.4rem;
+}
+
+/* Bark card datetime */
+.bark-card small {
+    color: #536471;
+    font-size: 0.9rem;
+}
+
+/* No cards available */
+.empty-bark-cards {
+    text-align: center;
+    color: #536471;
+    padding: 2rem;
+    background: #f7f9fa;
+    border-radius: 10px;
 }
 
 
