@@ -3,5 +3,5 @@ from . import views
 
 # Define paths from each url from each view
 urlpatterns = [
-    path('', views.index, name='index'), # base.html url path
+    path('profile/<str:username>/', views.wall, name='wall')
 ]

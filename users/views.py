@@ -15,7 +15,7 @@ def signup(request):
         if form.is_valid(): # Checks if username and email are valid
             user = form.save() # Persists the new user in the DB and save return in "user"
             login(request, user) # Login of the new user created
-            return redirect('profile') # Redirect to the profile template
+            return redirect('my-profile') # Redirect to the profile template
     # If method is GET
     else:
         form = UserCreationForm() # Sends empty form
@@ -34,13 +34,13 @@ def profile(request):
             # this prevents errors by saving the record to the database without the required field (username)
             bark.user = request.user # adds to the bark object the username logged in
             bark.save() # Saves bark object in DB with all required data
-            return redirect('profile') # Redirect to the same page
+            return redirect('my-profile') # Redirect to the same page
 
     # GET: render profile page and show history barks
     else: # If method is not POST (so GET) or !form.is_valid()
         form = BarkForm() # Renders an empty BarkForm form
 
-    user_barks = Bark.objects.filter(user=request.user) # Sends a query to the DB
+    user_barks = Bark.objects.filter(user=request.user).order_by('-created_at') # Sends a query to the DB
     # that retrieves all records from table Bark from the user who is logged in
 
     context = {'form': form, 'barks': user_barks} # Creates variables to serve as a context

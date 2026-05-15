@@ -92,7 +92,7 @@ body {
 }
 
 /* Logout hover styling */
-.logout-button:hover {
+.btn-logout:hover {
     background-color: var(--hover-color);
     border-radius: 10px;
 }
@@ -280,14 +280,17 @@ main {
 
 /* Card of each bark */
 .bark-card {
+    background-color: rgba(0, 0, 0, 0.02);
     border-bottom: 1px solid var(--nav-color);
+    border-radius: 10px;
     padding: 1.2rem 0.5rem;
     transition: background 0.2s, border-radius 0.2s;
+    margin-bottom: 1rem;
 }
 
 /* Bark card when hover */
 .bark-card:hover {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -303,6 +306,14 @@ main {
 .bark-card small {
     color: #536471;
     font-size: 0.9rem;
+}
+
+/* Bark! (submit) botton */
+#btn-submit-bark {
+    display: block;
+    width: auto;
+    padding: 10px 20px;
+    margin-left: auto;
 }
 
 /* No cards available */

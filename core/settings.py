@@ -120,5 +120,5 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static'] # Add path from static files (as .css)
 
 # Auth Redirects
-LOGIN_REDIRECT_URL = 'profile'
+LOGIN_REDIRECT_URL = 'my-profile'
 LOGOUT_REDIRECT_URL = 'login'

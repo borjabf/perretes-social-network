@@ -22,7 +22,7 @@
         <ul class="nav-links">
             <!-- If user is signed up the menu shows -->
             {% if user.is_authenticated %}
-            <li><a href="{%  url 'profile' %}">Profile</a></li>
+            <li><a href="{%  url 'my-profile' %}">Profile</a></li>
             <!-- For security reasons, Django requires a POST request to be sent for logout -->
                 <li>
                 <form action="{% url 'logout' %}" method="post">
