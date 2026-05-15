@@ -137,9 +137,50 @@ main {
     text-align: left;
 }
 
+/* Access form labels using {{ form.as_p }} hidden structure */
+/* Form username helper */
+.auth-form .helptext {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+
+/* Form ul */
+.auth-form ul {
+    margin-top: -10px;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+/* Form labels */
+.auth-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+/* Form inputs */
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+/* Form inputs focus */
+.auth-form input:focus {
+    outline: none;
+    border-color: var(--hover-color);
+}
+
 /* Submit button */
 .btn-submit {
-    background-color: var(--hover-color); /* Tu rosa coral */
+    background-color: var(--hover-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -153,6 +194,11 @@ main {
 /* Submit button hover */
 .btn-submit:hover {
     filter: brightness(1.1);
+}
+
+/* Redirection text bottom form */
+.option-redir {
+    margin: 1.2rem;
 }
 
 
