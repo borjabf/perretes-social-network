@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page not found | Bark</title>
+    <link rel="stylesheet" href="{% static 'css/404.css' %}">
+</head>
+<body>
+    <main class="error-container">
+            <div class="error-img">
+                <img src="{%  static 'images/404-img.png' %}">
+            </div>
+            
+
+            <div class="error-text">
+                <h1>404</h1>
+                <p>Oops! It looks like the dog you're looking for has run away from the park or was never here.</p>
+                <a href="{%  url 'my-profile' %}" class="btn-home">Back to my profile</a>
+            </div>
+
+
+
+    </main>
+</body>
+</html>

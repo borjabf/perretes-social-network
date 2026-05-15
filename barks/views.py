@@ -18,4 +18,8 @@ def wall(request, username):
     # Render template wall.html with the context
     return render(request, 'barks/wall.html', context)
 
+# View to render the custom 404.html page
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)
+
 

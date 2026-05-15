@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-w3xz_w&&wd=^m!176h2u8t62!$xc*j&+&o73h#bub*_6j$h4rf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -122,3 +123,6 @@ STATICFILES_DIRS = [BASE_DIR / 'static'] # Add path from static files (as .css)
 # Auth Redirects
 LOGIN_REDIRECT_URL = 'my-profile'
 LOGOUT_REDIRECT_URL = 'login'
+
+# Static route from WhiteNoise
+STATIC_ROOT = BASE_DIR / "staticfiles"

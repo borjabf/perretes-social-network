@@ -1,0 +1,70 @@
+/* ============================= */
+   /* 404 error page */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 3.5rem;
+    border-radius: 20px;
+    gap: 4rem;
+}
+
+.error-img img {
+    max-width: 250px;
+    max-height: 350px;
+    height: auto;
+    display: block;
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.error-text h1 {
+    font-size: 6rem;
+    color: #473283;
+    margin-bottom: 0.5rem;
+}
+
+.error-text p {
+    font-size: 1.3rem;
+    color: #536471;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.btn-home {
+    background-color: #ff4b7d;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 14px 32px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.btn-home:hover {
+    filter: brightness(1.1);
+}
