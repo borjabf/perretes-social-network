@@ -1,0 +1,24 @@
+<!-- Extends base.html -->
+{% extends 'base.html' %}
+
+<!-- Page title block -->
+{% block title %}Log in | Barks{% endblock %}
+<!-- Dynamic content block form base.html -->
+{% block content %}
+    <section class="auth-container">
+    <h2>Hey there again!</h2>
+    <!-- Create form with POST method to send user data to DB -->
+    <form method="POST" class="auth-form">
+    <!-- Token to check if form is sent by users from the site (not external) -->
+    {% csrf_token %}
+    <!-- Template filer from the view "login" (build in Django) to create all the sign-in form fields and validations -->
+    {{ form.as_p }}
+        <button type="submit" class="btn-submit">Enter</button>
+    </form>
+
+    <div class="option-redir">
+        <p>New in Barks? <a href="{% url 'signup' %}">Create you account here</a></p>
+    </div>
+    </section>
+
+{%  endblock %}

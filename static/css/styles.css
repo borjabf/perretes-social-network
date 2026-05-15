@@ -1,3 +1,7 @@
+/* ========================= */
+/* Base page */
+/* ========================= */
+
 /* Reset settings */
 * {
     margin: 0;
@@ -91,6 +95,7 @@ main {
     margin-top: auto;
 }
 
+/* Footer content */
 .footer-content {
     display: flex;
     align-items: center;
@@ -100,16 +105,55 @@ main {
     gap: 1.5rem;
 }
 
+/* Social icons container */
 .social-links {
     display: flex;
     gap: 1.5rem;
 }
 
+/* Social icons */
 .social-links a {
     color: var(--hover-color);
     font-size: 1.2rem;
 }
 
+/* ========================= */
+/* Login & Signup Pages */
+/* ========================= */
+
+/* Sections container */
+.auth-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Form container */
+.auth-form {
+    text-align: left;
+}
+
+/* Submit button */
+.btn-submit {
+    background-color: var(--hover-color); /* Tu rosa coral */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Submit button hover */
+.btn-submit:hover {
+    filter: brightness(1.1);
+}
 
 
 

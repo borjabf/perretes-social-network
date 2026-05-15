@@ -1,0 +1,18 @@
+<!-- Extends base.html -->
+{% extends 'base.html' %}
+
+<!-- Page title block -->
+{% block title %}Profile | Barks{% endblock %}
+<!-- Dynamic content block form base.html -->
+{% block content %}
+    <section class="container">
+    <div style="text-align: center; margin-top: 50px;">
+    <h1>¡Guau! 🐾</h1>
+    <p>Has entrado correctamente a tu perfil.</p>
+    <p>Hola, <strong>{{ user.username }}</strong>. Este es tu espacio privado.</p>
+
+    <a href="{% url 'logout' %}" style="color: var(--hover-color);">Cerrar sesión</a>
+</div>
+    </section>
+
+{%  endblock %}
