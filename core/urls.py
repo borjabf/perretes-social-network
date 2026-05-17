@@ -22,12 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Django built in auth pack
     path('accounts/', include('django.contrib.auth.urls')),
-
     # App users routes (empty route for URL = "signup", "login")
     path('', include('users.urls')),
-    # App barks routes
-    path('', include('barks.urls')),
-
 ]
 # Tells Django to use the custom 404 view
 handler404 = 'barks.views.custom_404'
