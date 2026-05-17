@@ -16,6 +16,9 @@
                 {% csrf_token %}
                 <!-- Template variable from the view "profile" to create all form fields and validations -->
                 {{ form.as_p }}
+                    <div class="char-counter-conteiner">
+                        <span id="char-counter">0</span> / 140
+                    </div>
                 <button type="submit" class="btn-submit" id="btn-submit-bark">Bark!</button> <!-- To send the bark -->
                 </form>
             </div>

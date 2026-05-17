@@ -6,7 +6,7 @@ from  django.contrib.auth.models import User
 class Bark(models.Model):
     # id column is created by default
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='barks') # Called "user" because Django rename it as user_id after
-    content = models.CharField(max_length=140) # CharField to add 140 limit constrain
+    content = models.CharField(max_length=280) # CharField to add 140 limit constrain
     created_at = models.DateTimeField(auto_now_add=True) # To set the first time bark creation only
 
     # Meta class to order barks by created_at descending (new first)

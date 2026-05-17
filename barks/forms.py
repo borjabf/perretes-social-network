@@ -17,7 +17,7 @@ class BarkForm(forms.ModelForm):
                 'class': 'bark-input',
                 'placeholder': 'Type your bark here',
                 'rows': 3,
-                'maxlength': '140' # Char constrain
+                'maxlength': '280' # Char constrain. Set to 280 to print de JS function "char-counter"
             })
         }
 
