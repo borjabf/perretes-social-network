@@ -16,13 +16,15 @@
     <nav class="navbar">
         <!-- Logo -->
         <div class="logo">
-            <img src="{% static 'images/logo1.png' %}" alt="bark logo" class="logo-img">
+            <a href="{%  url 'signup_home' %}">
+                <img src="{% static 'images/logo1.png' %}" alt="bark logo" class="logo-img">
+            </a>
         </div>
         <!-- Menú items -->
         <ul class="nav-links">
             <!-- If user is signed up the menu shows -->
             {% if user.is_authenticated %}
-            <li><a href="{%  url 'my-profile' %}">Profile</a></li>
+            <li><a href="{%  url 'profiles' username=user.username %}">Profile</a></li>
             <!-- For security reasons, Django requires a POST request to be sent for logout -->
                 <li>
                 <form action="{% url 'logout' %}" method="post">
