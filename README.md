@@ -203,7 +203,7 @@ Fuerza de manera intencionada el manejador de excepciones buscando el muro del u
 
 ## 🗺️ Arquitectura de Rutas (Endpoints)
 
-| Ruta URL | Nombre | Método HTTP | Controlador (View) | Descripción y Comportamiento |
+| Ruta URL | Nombre | Método HTTP | Controlador (View) | Descripción y Comportamiento &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | :--- | :--- | :---: | :--- | :--- |
 | `/` | `signup_home` | ![GET](https://img.shields.io/badge/-GET-22c55e?style=flat-square) <br> ![POST](https://img.shields.io/badge/-POST-f97316?style=flat-square) | `users.views.signup` | **Home Page principal.** Muestra el formulario de registro. Si el usuario ya está autenticado, lo redirige automáticamente a su propio perfil privado. |
 | `/signup/` | `signup` | ![GET](https://img.shields.io/badge/-GET-22c55e?style=flat-square) <br> ![POST](https://img.shields.io/badge/-POST-f97316?style=flat-square) | `users.views.signup` | **Endpoint de registro.** El método `POST` procesa, valida la integridad de los datos (`UserCreationForm`), persiste al nuevo usuario en la base de datos e inicia la sesión automáticamente. |
