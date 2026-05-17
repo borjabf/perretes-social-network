@@ -1,0 +1,267 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "GoldenLover",
+      "password": "pbkdf2_sha256$600000$Y8Xb49bM9Zp1$uN3A2WkR8B4bJqXtLzMvP1aBcDeFgHiJkLmNoPqRsTu="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "PugLife99",
+      "password": "pbkdf2_sha256$600000$Y8Xb49bM9Zp1$uN3A2WkR8B4bJqXtLzMvP1aBcDeFgHiJkLmNoPqRsTu="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "BarkingMax",
+      "password": "pbkdf2_sha256$600000$Y8Xb49bM9Zp1$uN3A2WkR8B4bJqXtLzMvP1aBcDeFgHiJkLmNoPqRsTu="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "DaisyTheFluff",
+      "password": "pbkdf2_sha256$600000$Y8Xb49bM9Zp1$uN3A2WkR8B4bJqXtLzMvP1aBcDeFgHiJkLmNoPqRsTu="
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "RoverRanger",
+      "password": "pbkdf2_sha256$600000$Y8Xb49bM9Zp1$uN3A2WkR8B4bJqXtLzMvP1aBcDeFgHiJkLmNoPqRsTu="
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "content": "Just took Cooper for a long run in the park. His tail hasn't stopped wagging! 🐕❤️ #GoldenRetriever",
+      "created_at": "2026-05-17T12:00:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "content": "Are raw food diets really better for pugs? Looking for some honest advice from fellow dog parents! 🦴🐾",
+      "created_at": "2026-05-17T12:15:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "content": "Caught him chewing my favorite sneakers again. Look at those guilty eyes... I can't even stay mad! 👟🐶",
+      "created_at": "2026-05-17T12:30:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 4,
+    "fields": {
+      "user": 5,
+      "content": "Bath day is officially over! Now she is doing the post-bath zoomies all over the living room rug. 🛀✨",
+      "created_at": "2026-05-17T12:45:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 5,
+    "fields": {
+      "user": 6,
+      "content": "Training tip of the day: consistency is key! Max finally learned how to 'roll over' after a week of practice. 🏆",
+      "created_at": "2026-05-17T13:00:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 6,
+    "fields": {
+      "user": 2,
+      "content": "Cooper found the biggest stick in the park today and refused to drop it all the way home! 🌲🐕",
+      "created_at": "2026-05-17T13:10:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 7,
+    "fields": {
+      "user": 3,
+      "content": "The pug snore is louder than a freight train tonight. How can someone so small make so much noise? 😴💤",
+      "created_at": "2026-05-17T13:20:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 8,
+    "fields": {
+      "user": 4,
+      "content": "Woke up to find Max stole all my socks and hid them under his bed. Truly a criminal mastermind. 🧦🐶",
+      "created_at": "2026-05-17T13:30:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 9,
+    "fields": {
+      "user": 5,
+      "content": "Daisy got mistaken for a sheep at the park today. To be fair, she desperately needs a haircut. 🐑✂️",
+      "created_at": "2026-05-17T13:40:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 10,
+    "fields": {
+      "user": 6,
+      "content": "Early morning hike with Rover. The woods are so peaceful and he loves tracking the trail. 🌲🥾",
+      "created_at": "2026-05-17T13:50:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 11,
+    "fields": {
+      "user": 2,
+      "content": "Is there anything better than Golden Retriever cuddles on a rainy Sunday? Pure happiness. 🌧️💛",
+      "created_at": "2026-05-17T14:00:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 12,
+    "fields": {
+      "user": 3,
+      "content": "Met another pug at the vet today. They did the classic head tilt at the exact same time! 🥺❤️",
+      "created_at": "2026-05-17T14:10:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 13,
+    "fields": {
+      "user": 4,
+      "content": "Paws up if your dog thinks the mailman is public enemy number one! 📬🐕 Every single day...",
+      "created_at": "2026-05-17T14:20:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 14,
+    "fields": {
+      "user": 5,
+      "content": "Her favorite spot to sleep is right on top of my laptop while I'm trying to work from home. 👩‍💻🐾",
+      "created_at": "2026-05-17T14:30:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 15,
+    "fields": {
+      "user": 6,
+      "content": "Agility class went amazing tonight! Rover got through the tunnel without stopping for once. 🏆🐕",
+      "created_at": "2026-05-17T14:40:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 16,
+    "fields": {
+      "user": 2,
+      "content": "Trying to teach Cooper not to jump on guests. He's just too friendly for his own good! 🐾😅",
+      "created_at": "2026-05-17T14:50:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 17,
+    "fields": {
+      "user": 3,
+      "content": "Someone is begging for my pizza crust right now with maximum puppy eyes. Stay strong... 🍕🐾",
+      "created_at": "2026-05-17T15:00:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 18,
+    "fields": {
+      "user": 4,
+      "content": "Max finally mastered the 'leave it' command... unless it's a piece of dropped bacon. 🥓🤷‍♂️",
+      "created_at": "2026-05-17T15:10:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 19,
+    "fields": {
+      "user": 5,
+      "content": "Just spent 20 minutes untangling burrs from her fluff. She thinks it was a fun game. 🐕🌾",
+      "created_at": "2026-05-17T15:20:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 20,
+    "fields": {
+      "user": 6,
+      "content": "Testing a new indestructible toy today. Let's see if it lasts more than ten minutes. 🦴🤞",
+      "created_at": "2026-05-17T15:30:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 21,
+    "fields": {
+      "user": 2,
+      "content": "Brushing out the undercoat today. Pretty sure I have enough fur to build a second dog. 🐕🧹",
+      "created_at": "2026-05-17T15:40:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 22,
+    "fields": {
+      "user": 3,
+      "content": "Bought a little raincoat for Barnaby. He absolutely hates it and refuses to walk. Help! 🌧️😂",
+      "created_at": "2026-05-17T15:50:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 23,
+    "fields": {
+      "user": 4,
+      "content": "That look he gives me when I say the word 'W-A-L-K'. He definitely knows how to spell! 🦮🎉",
+      "created_at": "2026-05-17T16:00:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 24,
+    "fields": {
+      "user": 5,
+      "content": "Homemade peanut butter dog treats are in the oven! Daisy is guarding the kitchen like a soldier. 🥜🐾",
+      "created_at": "2026-05-17T16:10:00Z"
+    }
+  },
+  {
+    "model": "barks.bark",
+    "pk": 25,
+    "fields": {
+      "user": 6,
+      "content": "A tired dog is a happy dog. Rover is completely knocked out after our beach trip today. 🏖️💤",
+      "created_at": "2026-05-17T16:20:00Z"
+    }
+  }
+]
