@@ -8,7 +8,7 @@
 
         {% if is_own_profile %}
             <!-- Template variable to get the username (private profile) -->
-            <h2>Welcome, {{ user_profile.username }}</h2>
+            <h2 class="greeting-message">Welcome, {{ user_profile.username }}</h2>
             <!-- Bark textarea to send barks -->
             <div class="bark-creator">
                 <form method="POST" class="bark-form"> <!-- Form to implement logic from view.profile -->
@@ -16,7 +16,7 @@
                 {% csrf_token %}
                 <!-- Template variable from the view "profile" to create all form fields and validations -->
                 {{ form.as_p }}
-                    <div class="char-counter-conteiner">
+                    <div class="char-counter-container">
                         <span id="char-counter">0</span> / 140
                     </div>
                 <button type="submit" class="btn-submit" id="btn-submit-bark">Bark!</button> <!-- To send the bark -->
@@ -24,15 +24,15 @@
             </div>
         {% else %}
             <!-- Template variable to get the username (public profile) -->
-            <h2>Wall of {{ user_profile.username }}</h2>
+            <h2 class="greeting-message">Wall of {{ user_profile.username }}</h2>
         {% endif %}
 
         <div class="barks-feed">
             <!-- If condition to show private profile message or public -->
             {% if is_own_profile %}
-                <h3>Your Barks</h3>
+                <h3 class="feed-title">Your Barks</h3>
             {%  else %}
-                <h3>{{ user_profile.username }}'s Barks</h3>
+                <h3 class="feed-title">{{ user_profile.username }}'s Barks</h3>
             {%  endif %}
             <!-- Template tag for loop to retrieve and show card for each bark in the DB -->
             {% for bark in user_barks %}

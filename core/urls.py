@@ -26,4 +26,4 @@ urlpatterns = [
     path('', include('users.urls')),
 ]
 # Tells Django to use the custom 404 view
-handler404 = 'barks.views.custom_404'
+handler404 = 'core.views.custom_404'

@@ -56,7 +56,7 @@ def profile(request, username):
         else:  # If method is not POST (so GET) or !form.is_valid()
             form = BarkForm()  # Renders an empty BarkForm form
 
-    user_barks = Bark.objects.filter(user=request.user).order_by('-created_at')  # Sends a query to the DB
+    user_barks = Bark.objects.filter(user=user_profile).order_by('-created_at')  # Sends a query to the DB
     # that retrieves all records from table Bark from the user who is logged in
 
     context = {
