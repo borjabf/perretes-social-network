@@ -1,0 +1,15 @@
+erDiagram
+    USER ||--o{ BARK : "publica"
+
+    USER {
+        int id PK
+        string username "Único"
+        string password "Hasheada"
+    }
+
+    BARK {
+        int id PK
+        int user_id FK "Relación 1:N"
+        string content "Máx 140 caracteres"
+        datetime created_at "Orden DESC"
+    }
