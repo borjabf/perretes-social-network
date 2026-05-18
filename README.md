@@ -47,7 +47,7 @@ git clone https://github.com/borjabf/perretes-social-network.git
 
 ### 3. 🌐 Crear y activar el entorno virtual
 
-> 💡 **Nota:** Es una buena práctica crear un entorno virtual para aislar por completo las dependencias del proyecto.
+> 💡 **Nota:** Es una buena práctica crear un entorno virtual para aislar por completo las dependencias del proyecto. Abre el proyecto en el IDE y ejecuta:
 
 #### **En Linux/macOS:**
 ```bash
