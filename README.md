@@ -236,7 +236,7 @@ Algunas de las decisiones técnicas en el desarrollo del proyecto:
 ### 🍕 Vertical Slicing - Desarrollo por funcionalidad
 
 - **Decisión:** hacer un desarrollo por funcionalidad de la aplicación end-to-end
-- **Justificación:** ante la necesidad de hacer un desarrollo ágil, se eligió hacerlo por funcionalidades completas y de manera incremental. De esta forma se entrega valor real al **MVP** desde el principio y se minimiza el riesgo de no llegar al **MVP** por haber desarrollado por capas. Para implementar el Vertical Slicing se ha utilizado la metodología Scrum, a través de un table kanban en Notion.
+- **Justificación:** ante la necesidad de hacer un desarrollo ágil, se eligió hacerlo por funcionalidades completas y de manera incremental. De esta forma se entrega valor real al **MVP** desde el principio y se minimiza el riesgo de no llegar al **MVP** por haber desarrollado por capas. Para implementar el Vertical Slicing se ha utilizado la metodología Scrum, a través de un tablero kanban en Notion.
 
 ![Notion Kanban](assets/notion-kanban.png)
 ![Kanban Card](assets/kanban-card.png)
