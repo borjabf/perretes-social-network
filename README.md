@@ -255,6 +255,7 @@ Algunas de las decisiones técnicas en el desarrollo del proyecto:
 - [ ] ![Full-Stack](https://img.shields.io/badge/-Full--Stack-0284c7?style=flat-square) **Asincronía con JS (AJAX):** cuando un usuario publica un Bark desde su perfil, agregar ese Bark al feed de Barks sin recargar la página.
 - [ ] ![Backend](https://img.shields.io/badge/-Backend-b91c1c?style=flat-square) **Feed general:** página que muestre todos los Barks de todos los usuarios de la plataforma, ordenados por fecha de publicación.
 - [ ] ![Backend](https://img.shields.io/badge/-Backend-b91c1c?style=flat-square) **Editar / eliminar Bark:** usuarios pueden editar sus Barks publicados en un intervalo de tiempo concreto, o pueden eliminarlos.
+- [ ] ![Backend](https://img.shields.io/badge/-Backend-b91c1c?style=flat-square) **Buscador de usuarios:** usuarios pueden encontrar el muro de otros usuario por medio de un buscador específico.
 - [ ] ![Full-Stack](https://img.shields.io/badge/-Full--Stack-0284c7?style=flat-square) **Scroll infinito:** por defecto cargar 10 barks. Cuando usuario llega hasta al último, se cargan otros 10 más.
 - [ ] ![Full-Stack](https://img.shields.io/badge/-Full--Stack-0284c7?style=flat-square) **Menciones en Barks:** usuario puede mencionar a otro usuario en un Bark (@usuario). Al pinchar el usuario mencionado se redirige a su perfil.
 - [ ] ![Frontend (UX/UI)](https://img.shields.io/badge/-Frontend%20%28UX%2FUI%29-ec4899?style=flat-square) **Diseño responsive:** implementar un diseño responsive para versión móvil.
