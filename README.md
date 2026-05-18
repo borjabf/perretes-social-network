@@ -184,6 +184,7 @@ Crea una cuenta nueva desde el formulario de registro. Puede utilizar alguna de 
 
 ### 3. 📝 Publicar un Bark
 Prueba la funcionalidad principal: escribe y publica tu primer **Bark!**. Comprueba cómo se añade dinámicamente y de forma cronológica a tu historial de publicaciones.
+> ✔️ **Extra:** comprueba la validación del formulario de Barks enfocada en mejorar el UX. Escribe más de 140 caracteres.
 
 ### 4. 👥 Explorar el muro de otros usuarios
 Comprueba la privacidad y vista pública visitando perfiles de terceros.
@@ -257,6 +258,7 @@ Algunas de las decisiones técnicas en el desarrollo del proyecto:
 - [ ] ![Full-Stack](https://img.shields.io/badge/-Full--Stack-0284c7?style=flat-square) **Scroll infinito:** por defecto cargar 10 barks. Cuando usuario llega hasta al último, se cargan otros 10 más.
 - [ ] ![Full-Stack](https://img.shields.io/badge/-Full--Stack-0284c7?style=flat-square) **Menciones en Barks:** usuario puede mencionar a otro usuario en un Bark (@usuario). Al pinchar el usuario mencionado se redirige a su perfil.
 - [ ] ![Frontend (UX/UI)](https://img.shields.io/badge/-Frontend%20%28UX%2FUI%29-ec4899?style=flat-square) **Diseño responsive:** implementar un diseño responsive para versión móvil.
+- [ ] ![Frontend](https://img.shields.io/badge/-Frontend-10b981?style=flat-square) **Validación de formularios:** implementación de validación en frontend de formularios de registro e inicio de sesión con JavaScript.
 
 ## 👤 Autor
 
