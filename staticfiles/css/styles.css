@@ -59,6 +59,41 @@ body {
     gap: 1rem;
 }
 
+/* Search bar */
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search form {
+    display: flex;
+}
+
+.nav-search input {
+    padding: 10px 15px;
+    border: 2px solid var(--nav-text);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--nav-text);
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.nav-search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-search input:focus {
+    outline: none;
+    background-color: rgba(255, 75, 125, 0.2);
+    border-color: var(--hover-color);
+}
+
+.nav-search input:hover {
+    border-color: var(--hover-color);
+}
+
 /* Menu item */
 .nav-links a {
     padding: 10px 20px;
