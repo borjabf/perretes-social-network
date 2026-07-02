@@ -95,6 +95,13 @@ body {
     border-color: var(--hover-color);
 }
 
+#search-button {
+    margin-left: 10px;
+    background-color: var(--nav-color);
+    border: none;
+    cursor: pointer;
+}
+
 /* Menu item */
 .nav-links a {
     padding: 10px 20px;

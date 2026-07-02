@@ -23,8 +23,9 @@
         <!-- Menú items -->
         {% if user.is_authenticated %}
         <div class="nav-search">
-            <form action="{% urls 'search_profile' %}" method="get">
+            <form action="{% url 'search_profile' %}" method="get">
                 <input type="text" name="q" placeholder="Search profile...">
+                <button id="search-button" type="submit">🔍</button>
             </form>
         </div>
         {% endif %}
