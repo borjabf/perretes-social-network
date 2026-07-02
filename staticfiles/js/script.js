@@ -27,4 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
             submitBtn.style.opacity = '1';
         }
     })
+    
+    
+    
 })
+
+// Search username form validation
+    function validateSearch() {
+        const query = document.getElementById('search-input').value.trim();
+        if (!query) {
+            alert('Please enter a username')
+            return false;
+        }
+        return true;
+    }
+

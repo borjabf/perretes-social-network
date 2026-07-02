@@ -63,6 +63,7 @@ body {
 .nav-search {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .nav-search form {
@@ -92,6 +93,13 @@ body {
 
 .nav-search input:hover {
     border-color: var(--hover-color);
+}
+
+#search-button {
+    margin-left: 10px;
+    background-color: var(--nav-color);
+    border: none;
+    cursor: pointer;
 }
 
 /* Menu item */
