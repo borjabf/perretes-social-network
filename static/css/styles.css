@@ -96,7 +96,9 @@ body {
 }
 
 #search-button {
+    font-size: 1.4rem;
     margin-left: 10px;
+    margin-right: 7px;
     background-color: var(--nav-color);
     border: none;
     cursor: pointer;
@@ -398,4 +400,33 @@ main {
     padding: 2rem;
     background: #f7f9fa;
     border-radius: 10px;
+}
+
+/* Error container */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#user-not-found {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.error-container h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.error-container p {
+    margin-bottom: 20px;
+}
+
+#btn-submit-go-back {
+    width: auto;
 }

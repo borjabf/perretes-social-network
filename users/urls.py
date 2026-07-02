@@ -12,4 +12,5 @@ urlpatterns = [
         "login-redirect/", views.login_redirect, name="login_redirect"
     ),  # Intermediate route after logging in
     path("search/", views.search_profile, name="search_profile"),
+    path("user-not-found/", views.user_not_found, name="user_not_found"),
 ]

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}User Not Found{% endblock %}
+
+{% block content %}
+
+<div class="error-container">
+    <img id="user-not-found" src="{% static 'images/user-not-found-icon.png' %}" alt="User Not Found">
+
+    <h1>Error!</h1>
+    <p>Looks like the user you're looking for doesn't exist.</p>
+
+    <button class="btn-submit" id="btn-submit-go-back" onclick="window.history.back()">Go Back!</button>
+</div>
+
+
+{% endblock %}

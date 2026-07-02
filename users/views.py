@@ -103,4 +103,11 @@ def search_profile(request):
         if user:
             return redirect("profiles", username=user.username)
 
+        return redirect("user_not_found")
+
     return redirect(request.META.get("HTTP_REFERER", "/"))
+
+
+# View for when a user is not found
+def user_not_found(request):
+    return render(request, "users/user_not_found.html")
